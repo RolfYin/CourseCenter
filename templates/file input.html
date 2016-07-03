@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load static %}
+<img src="{% static "image/../Test/fileview/1.jpg" %}" alt="My image"/>
+<form action="http://127.0.0.1:8000/upload/" method="post">
+  Last name: <input type="file" name="lname" />
+  <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
